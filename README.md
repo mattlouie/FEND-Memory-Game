@@ -12,6 +12,8 @@ Here's a game to test your memory built by using HTML, CSS, and JavaScipt. Click
 
 ## Game Preview
 
+![alt text](https://raw.githubusercontent.com/mattlouie/fend-memory-game/img/game-board.png "Memory Game preview")
+
 ## Required Dependancies
 
 * [Font-Awesome](https://fontawesome.com/) for game icons (all free icons, no need to buy)
