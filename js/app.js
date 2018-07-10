@@ -91,8 +91,8 @@ function turnOver() {
 function checkMatch(currentCard, previousCard) {
   setTimeout(function() {
     if (toggledCards[0].innerHTML === toggledCards[1].innerHTML) {
-      toggledCards[0].classList.toggle("match", "animated", "fadeOut", "disabled");
-      toggledCards[1].classList.toggle("match", "animated", "fadeOut", "disabled");
+      toggledCards[0].classList.toggle("match", "disabled");
+      toggledCards[1].classList.toggle("match", "disabled");
       matchedCards.push(toggledCards[0]);
       matchedCards.push(toggledCards[1]);
     } else {
