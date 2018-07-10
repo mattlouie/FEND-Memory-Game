@@ -68,6 +68,23 @@ for (let card of cards) {
   card.addEventListener("click", turnOver);
 }
 
+// Adds disables cards so they cannot be clicked
+function disable(){
+    Array.prototype.filter.call(cards, function(card){
+        card.classList.add('disabled');
+    });
+}
+
+//enable cards and disable matched cards
+function enable(){
+    Array.prototype.filter.call(cards, function(card){
+        card.classList.remove('disabled');
+        for(var i = 0; i < matchedCards.length; i++){
+            matchedCards[i].classList.add("disabled");
+        }
+    });
+}
+
 // Turn over cards
 function turnOver() {
   // Timer starts on first move
@@ -83,6 +100,7 @@ function turnOver() {
   }
   if (toggledCards.length === 2) {
     checkMatch();
+    disable();
   }
   rating();
 }
@@ -99,6 +117,7 @@ function checkMatch(currentCard, previousCard) {
       toggledCards[0].classList.remove("open", "show", "unclick", "disabled");
       toggledCards[1].classList.remove("open", "show", "unclick", "disabled");
     }
+    enable();
     if (matchedCards.length == 16) {
       checkGameOver();
     }
