@@ -12,7 +12,7 @@ Here's a game to test your memory built by using HTML, CSS, and JavaScipt. Click
 
 ## Game Preview
 
-![alt text](https://raw.githubusercontent.com/mattlouie/fend-memory-game/img/game-board.png "Memory Game preview")
+![alt text](https://raw.githubusercontent.com/mattlouie/FEND-Memory-Game/img/Game-Board.png "Memory Game preview")
 
 ## Required Dependancies
 

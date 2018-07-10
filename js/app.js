@@ -74,12 +74,12 @@ function turnOver() {
   if (moves == 0) {
     timeInterval();
   }
-  addMove();
-  //movesDisplay();
+  moves++
   moveCounter.innerHTML = moves;
   if (toggledCards.length < 2) {
     this.classList.add("open", "show", "unclick", "disabled");
     toggledCards.push(this);
+  //  addMove();
   }
   if (toggledCards.length === 2) {
     checkMatch();
@@ -163,7 +163,7 @@ function rating () {
 resetButton.addEventListener('click', resetGame);
 
 function stopTime() {
-  clearInterval(incrementer);
+  clearInterval(interval);
 }
 
 function resetGame () {
