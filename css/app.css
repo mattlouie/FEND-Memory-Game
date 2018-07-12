@@ -48,8 +48,9 @@ h1 {
 }
 
 .deck .card {
-    height: 125px;
-    width: 125px;
+    height: 120px;
+    width: 23%;
+    line-height: 90px;
     background: #2e3d49;
     font-size: 0;
     color: #ffffff;
@@ -131,3 +132,34 @@ h1 {
   background: #fffc;
   box-shadow: 0px 0px 4px 1px #d4d4d4b3;
 }
+
+/* Responsive */
+@media all and (max-width: 600px){
+  .deck {
+    width: 400px;
+  }
+}
+
+@media all and (min-width: 600px) {
+  .deck {
+    width: 500px; }
+    .deck li {
+      height: 20px;
+      line-height: 60px; }
+
+@media all and (min-width: 750px) {
+  .game-container h1 {
+    font-size: 3.5rem; }
+  .game-container .score-panel {
+    font-size: 1.0rem; }
+
+  .deck {
+    width: 600px; }
+    .deck li {
+      height: 140px;
+      line-height: 160px; }
+
+@media all and (min-width: 1000px) {
+  .deck li {
+    height: 140px;
+    line-height: 160px; } }
